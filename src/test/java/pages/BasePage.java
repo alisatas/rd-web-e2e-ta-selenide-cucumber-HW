@@ -16,10 +16,10 @@ public abstract class BasePage {
     public void open() {
         String url = propertyManager.getProperty("APP_URL") ;
         Selenide.open(url);
-    }
 
-    public String getUrl() throws InterruptedException {
-        //Thread.sleep(2000);
-        return WebDriverRunner.getWebDriver().getCurrentUrl();
+    }
+    public void openWebTable() {
+        String url = propertyManager.getProperty("APP_WEBTABLES") ;
+        Selenide.open(url);
     }
 }
