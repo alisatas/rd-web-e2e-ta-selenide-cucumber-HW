@@ -19,7 +19,7 @@ public class HomePage extends BasePage{
     public SelenideElement departmentText = $(By.xpath ("//input[@id='department']"));
     public SelenideElement saveButton = $(By.xpath ("//button[@id='submit']"));
     public SelenideElement editButton = $(By.xpath ("//span[@id='edit-record-3']/svg"));
-    public SelenideElement editedName=$(By.xpath ("#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(3) > div > div:nth-child(1)"));
+    public SelenideElement editedName=$("#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(3) > div > div:nth-child(1)");
 
 
 
