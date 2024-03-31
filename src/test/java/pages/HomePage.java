@@ -6,18 +6,18 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class HomePage extends BasePage{
 
-    public SelenideElement buttonsButton = $ ( "div[class='element-list collapse show'] li[class='btn btn-light ']:nth-child(5)" );
-    public SelenideElement clickMeButton = $ ("div[class='col-12 mt-4 col-md-6'] div:nth-child(4) button");
-    public SelenideElement getTextDynamicMessage = $("p[id='dynamicClickMessage']");
-    public SelenideElement addButton = $("button#addNewRecordButton");
-    public SelenideElement firstNameText = $("input#firstName");
-    public SelenideElement surNameText = $("input#lastName");
-    public SelenideElement emailText = $("input#userEmail");
-    public SelenideElement ageText = $("input#age");
-    public SelenideElement salaryText = $("input#salary");
-    public SelenideElement departmentText = $("input#department");
-    public SelenideElement saveButton = $("button#submit");
-    public SelenideElement editButton = $("span#edit-record-3 >svg");
+    public SelenideElement buttonsButton = $ ( "//div[@class='element-list collapse show']//li[@class='btn btn-light '][(count(preceding-sibling::*)+1) = 5]" );
+    public SelenideElement clickMeButton = $ ("//div[@class='col-12 mt-4 col-md-6']//div[(count(preceding-sibling::*)+1) = 4]//button");
+    public SelenideElement getTextDynamicMessage = $("//p[@id='dynamicClickMessage']");
+    public SelenideElement addButton = $("//button[@id='addNewRecordButton']");
+    public SelenideElement firstNameText = $("//input[@id='firstName']");
+    public SelenideElement surNameText = $("//input[@id='lastName']");
+    public SelenideElement emailText = $("//input[@id='userEmail']");
+    public SelenideElement ageText = $("//input[@id='age']");
+    public SelenideElement salaryText = $("//input[@id='salary']");
+    public SelenideElement departmentText = $("//input[@id='department']");
+    public SelenideElement saveButton = $("//button[@id='submit']");
+    public SelenideElement editButton = $("//span[@id='edit-record-3']/svg");
     public SelenideElement editedName=$("#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(3) > div > div:nth-child(1)");
 
 
